@@ -1,0 +1,8 @@
+foreground #9DEEDA
+background #1C0211
+
+
+# BEGIN_KITTY_THEME
+# Belafonte Night
+# include current-theme.conf
+# END_KITTY_THEME

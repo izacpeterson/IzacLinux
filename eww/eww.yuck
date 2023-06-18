@@ -1,0 +1,11 @@
+(defwindow bar :geometry (geometry :width "100%" :height "25px") :class "bar" (bar))
+
+(defwidget clock [] time)
+
+(defwidget user [] "Izac")
+
+(defpoll time :interval "10s"
+  "date '+%H:%M %b %d, %Y'")
+
+
+(defwidget bar [] (centerbox (user) (clock)))

@@ -1,0 +1,57 @@
+super + k
+	kitty
+super + g
+	google-chrome
+super + r
+	bspc wm -r
+super + Escape
+	bspc node -c
+super + shift + r
+	pkill -usr1 -x sxhkd; notify-send 'sxhkd' 'Reloaded config'
+super + l
+	bspc quit
+super + e
+	thunar
+super + d
+	dmenu_run -b
+super + j
+	bspc node -f next
+super + c
+	code
+super + Tab
+    bspc desktop next
+
+
+super + 1
+    bspc desktop -f '^1'
+
+super + 2
+    bspc desktop -f '^2'
+
+super + 3
+    bspc desktop -f '^3'
+
+super + 4
+    bspc desktop -f '^4'
+
+super + 5
+    bspc desktop -f '^5'
+
+# s - float / f - fullscreen
+super + {s,f}
+    bspc node -t {tiled,fullscreen}
+
+super + bracket{left,right}
+  	bspc desktop -f {prev,next}.local
+
+super + shift + {p,o}
+  bspc node @/ -C {forward,backward}
+
+super + p
+	bspc node -f next
+
+super + F6
+    brightnessctl set 10%-
+    
+super + F7
+    brightnessctl set 10%+
